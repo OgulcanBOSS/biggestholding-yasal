@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — İnek / StudyBot</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="page">
+<p class="back"><a href="../index.html">&larr; Tüm uygulamalar</a></p>
+<h1>Gizlilik Politikası: İnek / StudyBot</h1>
+<p><strong>Son güncelleme: [DOLDURULACAK: Tarih]</strong></p>
+<p>Bu Gizlilik Politikası, İnek / StudyBot ("Uygulama", "biz", "bize", "bizim")<br>uygulamasını kullanırken bilgilerinizin nasıl işlendiğini açıklar. Uygulama<br>[DOLDURULACAK: Şirket adı] ("İnek / StudyBot ekibi") tarafından geliştirilip<br>işletilmektedir.</p>
+<p>Uygulamayı kullanarak bu politikada anlatılan uygulamaları kabul etmiş<br>olursunuz. Kabul etmiyorsanız lütfen Uygulamayı kullanmayın.</p>
+<p>Veri akışı bu belgede, Uygulamanın gerçek sunucu koduna bakılarak<br>doğrulanmıştır; aşağıda anlatılanlar varsayım değil, kodun fiilen yaptığıdır.</p>
+<h2>1. Hangi Bilgileri Topluyoruz</h2>
+<h3>1.1 Ses kaydı (geçici, saklanmaz)</h3>
+<p>Mikrofonla bir ders kaydettiğinizde, ses dosyası yazıya çevrilmek üzere<br>sunucumuza gönderilir; sunucu bunu <strong>Groq</strong> adlı üçüncü taraf yapay zeka<br>servisine iletir (bkz. Bölüm 2). <strong>Ses kaydınız sunucumuzda diske<br>yazılmaz, saklanmaz.</strong> İşlem (yazıya çevirme) tamamlanır tamamlanmaz ses<br>verisi sunucu belleğinden atılır.</p>
+<h3>1.2 PDF içeriği (geçici, saklanmaz)</h3>
+<p>Yüklediğiniz PDF dosyası sunucumuza gönderilir ve metni sunucumuzun <strong>kendi<br>üzerinde</strong> (herhangi bir üçüncü tarafa gönderilmeden) yerel bir kütüphaneyle<br>çıkarılır. PDF dosyası sunucuda diske yazılmaz, saklanmaz.</p>
+<h3>1.3 YouTube bağlantısı</h3>
+<p>Bir YouTube bağlantısı verdiğinizde, sunucumuz o videonun herkese açık<br>altyazı/transkript verisini almak için YouTube'un (Google) servisine<br>bağlanır. Yalnızca verdiğiniz bağlantı iletilir; hesap bilgisi paylaşılmaz.<br>Altyazısı kapalı videolarda bu adım örnek içerikle sonuçlanır.</p>
+<h3>1.4 Çıkarılan metin → not üretimi</h3>
+<p>Ses, PDF veya YouTube kaynağından elde edilen metin, düzenli not, önemli<br>nokta özeti, bilgi kartları ve quiz üretmek üzere üçüncü taraf yapay zeka<br>servisi <strong>Anthropic (Claude)</strong>'a gönderilir (bkz. Bölüm 2). Bu metin de<br>sunucumuzda diske yazılmaz.</p>
+<h3>1.5 Üretilen notların saklandığı yer</h3>
+<p>Ses/PDF/YouTube işlemenin SONUCU olan not paketi (metinler, özetler,<br>kartlar, quiz soruları), <strong>cihazınızda</strong> (telefonda AsyncStorage, tarayıcıda<br>localStorage) tutulur. Bu veri bizim sunucularımıza kalıcı olarak<br>YÜKLENMEZ ve sunucularımızda saklanmaz.</p>
+<h3>1.6 Rıza ekranı</h3>
+<p>Kayıt başlamadan önce Uygulama size ayrı bir ekranda ne olacağını<br>(ses sunucuya gider, işlem bitince saklanmaz, yapay zeka servisleri<br>kullanılır, başkasının sesini kaydediyorsanız onun izninin sizin<br>sorumluluğunuzda olduğu) açıkça gösterir ve onayınızı ister. Bu onay<br>verilmeden kayıt başlamaz.</p>
+<h3>1.7 Satın alma / abonelik durumu</h3>
+<p>Biz (ve/veya App Store / Google Play ve abonelik/ödeme işleme sağlayıcımız),<br>Uygulamanın doğru özellikleri açabilmesi için abonelik durumunuzun (ör.<br>aktif bir aboneliğiniz olup olmadığı) kaydını tutarız. Tam kart bilgilerinizi<br>almayız veya saklamayız; bunlar doğrudan Apple veya Google tarafından<br>işlenir.</p>
+<h3>1.8 Analitik</h3>
+<p>Bu sürümde İnek / StudyBot herhangi bir analitik veya takip servisi<br><strong>kullanmamaktadır</strong>. İleride analitik veya çökme raporlama aracı<br>eklenirse, bu Gizlilik Politikası önceden güncellenir ve yukarıdaki "Son<br>güncelleme" tarihi değişir.</p>
+<h3>1.9 Kötüye kullanım freni</h3>
+<p>Sunucumuz, aşırı istek göndermeyi engellemek için IP adresi başına<br>dakikada istek sayısını sınırlar. Bu sınırlama teknik bir koruma<br>önlemidir, kişisel profil oluşturmak için kullanılmaz ve IP adresleri<br>kalıcı olarak saklanmaz.</p>
+<h2>2. Üçüncü Taraf Yapay Zeka İşleyicileri</h2>
+<p>Not üretimi için verileriniz şu üçüncü taraf servislere iletilir:</p>
+<ul>
+<li><strong>Groq</strong>: ses kaydınızı yazıya çevirir (Whisper modeli).</li>
+<li><strong>Anthropic (Claude)</strong>: yazıya çevrilmiş/PDF/YouTube metnini not,</li>
+</ul>
+<p>  özet, bilgi kartı ve quize dönüştürür.</p>
+<ul>
+<li><strong>YouTube (Google)</strong>: yalnızca verdiğiniz YouTube bağlantısının</li>
+</ul>
+<p>  herkese açık transkript verisini almak için.</p>
+<p>Bu sağlayıcıların kendi altyapılarında veriyi geçici olarak ne kadar<br>süreyle tuttuğunu kontrol edemeyiz; ancak İnek / StudyBot kendi sunucusu<br>üzerinden bu veriyi işlem öncesinde, sırasında veya sonrasında saklamaz ya<br>da arşivlemez.</p>
+<h2>3. Bilgileri Nasıl Kullanıyoruz</h2>
+<p>Yukarıda açıklanan sınırlı bilgileri yalnızca şu amaçlarla kullanırız:</p>
+<ul>
+<li>Ders kaydınızdan/PDF'inizden/YouTube bağlantınızdan not, özet, bilgi</li>
+</ul>
+<p>  kartı ve quiz üretmek.</p>
+<ul>
+<li>Abonelik durumunuzu yönetmek ve ücretli özellikleri açmak.</li>
+<li>Uygulamayı işletmek, sürdürmek ve iyileştirmek.</li>
+</ul>
+<p>Kişisel bilgilerinizi satmayız.</p>
+<h2>4. Veri Saklama Süresi</h2>
+<ul>
+<li><strong>Ses kaydı, PDF içeriği, YouTube'dan çekilen metin:</strong> saklanmaz;</li>
+</ul>
+<p>  yalnızca ilgili isteğin işlenmesi süresince kullanılır.</p>
+<ul>
+<li><strong>Üretilen not paketi (metin, özet, kart, quiz):</strong> yalnızca sizin</li>
+</ul>
+<p>  cihazınızda tutulur; sunucumuzda tutulmaz.</p>
+<ul>
+<li><strong>Abonelik durumu:</strong> aboneliğinizi yönetmek ve yasal/muhasebe</li>
+</ul>
+<p>  yükümlülüklerine uymak için gereken süre boyunca tutulur.</p>
+<h2>5. Çocukların Gizliliği</h2>
+<p>İnek / StudyBot, 13 yaşın altındaki kişilerin kullanımı için tasarlanmamıştır.<br>13 yaşın altındaki çocuklardan bilerek bilgi toplamayız. 13 yaşından küçük<br>bir çocuğun Uygulamayı kullandığını ve bize bilgi verdiğini düşünüyorsanız,<br>konuyu ele alabilmemiz için lütfen [DOLDURULACAK: İletişim e-postası]<br>adresinden bize ulaşın.</p>
+<p>Not: Uygulama sınav hazırlığı (ör. üniversite sınavı) amaçlı da<br>kullanılabildiği için kullanıcı kitlesinin büyük bölümü lise/üniversite<br>yaşındadır; yine de 13 yaş altı kullanım hedeflenmemektedir.</p>
+<h2>6. Haklarınız</h2>
+<h3>6.1 KVKK (Türkiye: 6698 sayılı Kişisel Verilerin Korunması Kanunu)</h3>
+<p>Türkiye'de ikamet ediyorsanız, KVKK kapsamında şu haklara sahipsiniz:</p>
+<ul>
+<li>Kişisel verinizin işlenip işlenmediğini öğrenme.</li>
+<li>İşlenmişse buna ilişkin bilgi talep etme.</li>
+<li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme.</li>
+<li>Yurt içinde/yurt dışında verilerin aktarıldığı üçüncü kişileri bilme.</li>
+<li>Eksik/yanlış işlenmişse düzeltilmesini isteme.</li>
+<li>Kanuni şartlar oluştuğunda verinin silinmesini/yok edilmesini isteme.</li>
+<li>Yapılan işlemlerin, verinin aktarıldığı üçüncü kişilere bildirilmesini</li>
+</ul>
+<p>  isteme.</p>
+<ul>
+<li>İşlenen verinin münhasıran otomatik sistemlerle analiz edilmesi</li>
+</ul>
+<p>  suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme.</p>
+<ul>
+<li>Kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın</li>
+</ul>
+<p>  giderilmesini talep etme.</p>
+<p>Bu haklarınızı kullanmak için [DOLDURULACAK: İletişim e-postası]<br>adresinden veri sorumlusu sıfatıyla bize başvurabilirsiniz.<br><strong>[DOLDURULACAK: Veri Sorumlusu unvanı/adresi: KVKK madde 11 başvurusu<br>için VERBİS kaydı gerekip gerekmediği şirket kurulduğunda ayrıca<br>değerlendirilmelidir.]</strong></p>
+<h3>6.2 GDPR ve Diğer Ülkeler</h3>
+<p>Avrupa Birliği/Avrupa Ekonomik Alanı veya benzer veri koruma kanunu olan<br>bir ülkede ikamet ediyorsanız, şu haklara sahip olabilirsiniz:</p>
+<ul>
+<li>Hakkınızda tuttuğumuz kişisel bilgileri öğrenme.</li>
+<li>Bu bilgilere erişim, düzeltme veya silinmesini talep etme.</li>
+<li>Belirli işlemlere itiraz etme veya bunları kısıtlama.</li>
+<li>Verilerinizin taşınabilir bir formatta kopyasını isteme.</li>
+<li>İşleme rızaya dayanıyorsa, rızanızı istediğiniz an geri çekme.</li>
+<li>Kişisel bilgilerin "satışına"/"paylaşımına" itiraz etme (kişisel bilgi</li>
+</ul>
+<p>  satmıyoruz).</p>
+<p>Bu haklardan herhangi birini kullanmak için [DOLDURULACAK: İletişim<br>e-postası] adresinden bize ulaşın. Talebinize yürürlükteki mevzuata uygun<br>şekilde yanıt vereceğiz.</p>
+<h2>7. Veri Güvenliği</h2>
+<p>Bu politikada açıklanan sınırlı bilgiyi korumak için makul teknik ve<br>idari önlemler alıyoruz. Ancak hiçbir elektronik iletim veya saklama<br>yöntemi %100 güvenli değildir; mutlak güvenliği garanti edemeyiz.</p>
+<h2>8. Uluslararası Veri Aktarımı</h2>
+<p>Üçüncü taraf yapay zeka sağlayıcılarımız (Groq, Anthropic) verileri<br>bulunduğunuz ülke dışındaki sunucularda işleyebileceğinden, bilgileriniz<br>(özellikle analiz sırasındaki ses kaydınız veya çıkarılan metin) başka<br>ülkelere aktarılıp orada işlenebilir; bu ülkelerin veri koruma kanunları<br>sizin ülkenizden farklı olabilir.</p>
+<h2>9. Bu Politikadaki Değişiklikler</h2>
+<p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz (ör. yeni bir<br>özellik eklendiğinde veya veri işleme şeklimiz değiştiğinde). Değişiklik<br>yapıldığında yukarıdaki "Son güncelleme" tarihini güncelleriz.<br>Değişiklikler yürürlüğe girdikten sonra Uygulamayı kullanmaya devam etmek,<br>güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+<h2>10. Bize Ulaşın</h2>
+<p>Bu Gizlilik Politikası veya kişisel bilgileriniz hakkında sorularınız,<br>endişeleriniz veya talepleriniz için:</p>
+<p><strong>[DOLDURULACAK: Şirket adı]</strong><br>Adres: [DOLDURULACAK: Adres]<br>E-posta: [DOLDURULACAK: İletişim e-postası]<br>Web sitesi: [DOLDURULACAK: Web sitesi]</p>
+<p>İnek / StudyBot ekibi</p>
+<hr>
+<hr>
+<h1>Privacy Policy: StudyBot / İnek (English)</h1>
+<p><strong>Last updated: [DOLDURULACAK: Date]</strong></p>
+<p>This Privacy Policy explains how information is handled when you use the<br>StudyBot / İnek mobile application ("the App," "we," "us," or "our"). The<br>App is developed and operated by [DOLDURULACAK: Company name] ("the<br>StudyBot team").</p>
+<p>By using the App, you agree to the practices described in this policy. If<br>you do not agree, please do not use the App.</p>
+<p>The data flow described below was verified against the App's actual<br>server code: this is not a guess, it reflects what the server does.</p>
+<h2>1. Information We Collect</h2>
+<h3>1.1 Audio recording (temporary, not stored)</h3>
+<p>When you record a lecture with the microphone, the audio file is sent to<br>our server to be transcribed; our server forwards it to <strong>Groq</strong>, a<br>third-party AI provider (see Section 2). <strong>Your audio is not written to<br>disk or stored on our server.</strong> As soon as transcription finishes, the<br>audio data is discarded from server memory.</p>
+<h3>1.2 PDF content (temporary, not stored)</h3>
+<p>The PDF you upload is sent to our server and its text is extracted<br><strong>locally on our own server</strong>, using a local library, without sending<br>the file to any third party. The PDF is not written to disk or stored.</p>
+<h3>1.3 YouTube link</h3>
+<p>When you provide a YouTube link, our server connects to YouTube's<br>(Google's) service to fetch that video's publicly available caption/<br>transcript data. Only the link you provide is sent; no account<br>information is shared. If a video has captions disabled, this step<br>returns sample content instead.</p>
+<h3>1.4 Extracted text -&gt; note generation</h3>
+<p>Text obtained from your audio, PDF, or YouTube source is sent to<br><strong>Anthropic (Claude)</strong>, a third-party AI provider, to generate organized<br>notes, a key-point summary, flashcards, and a quiz (see Section 2). This<br>text is also not written to disk on our server.</p>
+<h3>1.5 Where the generated notes live</h3>
+<p>The RESULT of processing your audio/PDF/YouTube input (the note pack:<br>text, summaries, flashcards, quiz questions) is stored <strong>on your<br>device</strong> (AsyncStorage on phone, localStorage on web). This data is not<br>permanently uploaded to or stored on our servers.</p>
+<h3>1.6 Consent screen</h3>
+<p>Before recording starts, the App shows a dedicated screen explaining<br>what happens (audio goes to our server, is not stored once processed, AI<br>services are used, and that getting consent from anyone else you record<br>is your own responsibility) and asks for your confirmation. Recording<br>does not start without this consent.</p>
+<h3>1.7 Purchase / subscription status</h3>
+<p>We (and/or the App Store / Google Play, and our subscription/payment<br>processing provider) keep a record of your subscription status (for<br>example, whether you have an active subscription) so the App can unlock<br>the correct features. We do not receive or store your full payment card<br>details; these are handled directly by Apple or Google.</p>
+<h3>1.8 Analytics</h3>
+<p>As of this version, StudyBot / İnek does <strong>not</strong> use any analytics or<br>tracking service. If we add analytics or crash-reporting tools in the<br>future, this Privacy Policy will be updated in advance, and the "Last<br>updated" date above will change accordingly.</p>
+<h3>1.9 Abuse prevention</h3>
+<p>Our server limits the number of requests per minute per IP address to<br>prevent abuse. This is a technical safeguard, not used to build personal<br>profiles, and IP addresses are not retained long-term.</p>
+<h2>2. Third-Party AI Processors</h2>
+<p>To generate your notes, your data is sent to these third-party services:</p>
+<ul>
+<li><strong>Groq</strong>: transcribes your audio recording (Whisper model).</li>
+<li><strong>Anthropic (Claude)</strong>: turns transcribed/PDF/YouTube text into</li>
+</ul>
+<p>  notes, a summary, flashcards, and a quiz.</p>
+<ul>
+<li><strong>YouTube (Google)</strong>: only to fetch the publicly available transcript</li>
+</ul>
+<p>  data for the YouTube link you provide.</p>
+<p>We do not control how long these providers' own infrastructure may<br>transiently hold data during processing, but StudyBot / İnek itself does<br>not store or archive this data on its own server before, during, or<br>after that exchange.</p>
+<h2>3. How We Use Information</h2>
+<p>We use the limited information described above only to:</p>
+<ul>
+<li>Generate your notes, summary, flashcards, and quiz from your audio/</li>
+</ul>
+<p>  PDF/YouTube input.</p>
+<ul>
+<li>Manage your subscription and unlock paid features.</li>
+<li>Operate, maintain, and improve the App.</li>
+</ul>
+<p>We do not sell your personal information.</p>
+<h2>4. Data Retention</h2>
+<ul>
+<li><strong>Audio, PDF content, text pulled from YouTube:</strong> not stored; used</li>
+</ul>
+<p>  only for the duration of processing the relevant request.</p>
+<ul>
+<li><strong>Generated note pack (text, summary, cards, quiz):</strong> kept only on</li>
+</ul>
+<p>  your own device; not retained on our servers.</p>
+<ul>
+<li><strong>Subscription status:</strong> retained for as long as needed to manage your</li>
+</ul>
+<p>  subscription and comply with legal/accounting obligations.</p>
+<h2>5. Children's Privacy</h2>
+<p>StudyBot / İnek is not intended for use by anyone under the age of 13.<br>We do not knowingly collect information from children under 13. If you<br>believe a child under 13 has used the App and provided us with<br>information, please contact us at [DOLDURULACAK: Contact email] so we<br>can address it.</p>
+<p>Note: because the App is also used for exam preparation (e.g.<br>university entrance exams), most users are of high school/university<br>age; the App still does not target users under 13.</p>
+<h2>6. Your Rights</h2>
+<h3>6.1 GDPR (EU/EEA and similar jurisdictions)</h3>
+<p>If you live in the European Union/European Economic Area or a<br>jurisdiction with similar data protection law, you may have the right<br>to:</p>
+<ul>
+<li>Know what personal information we hold about you.</li>
+<li>Request access to, correction of, or deletion of your personal</li>
+</ul>
+<p>  information.</p>
+<ul>
+<li>Object to or restrict certain processing.</li>
+<li>Request a copy of your data in a portable format.</li>
+<li>Withdraw consent at any time, where processing is based on consent.</li>
+<li>Object to the "sale" or "sharing" of personal information (we do not</li>
+</ul>
+<p>  sell personal information).</p>
+<p>To exercise any of these rights, contact us at [DOLDURULACAK: Contact<br>email]. We will respond in accordance with applicable law.</p>
+<h3>6.2 KVKK (Turkey: Law No. 6698 on the Protection of Personal Data)</h3>
+<p>If you reside in Turkey, under KVKK you have the right to, among others:<br>learn whether your personal data is processed; request information<br>about it; learn its purpose and whether it is used accordingly; know<br>the third parties it is transferred to; request correction of<br>incomplete/incorrect data; request deletion/destruction where legal<br>conditions apply; object to a result that is to your detriment arising<br>solely from automated analysis; and claim compensation for damages<br>arising from unlawful processing. You may submit these requests to<br>[DOLDURULACAK: Contact email]. <strong>[DOLDURULACAK: data controller<br>title/address: whether a VERBİS registration is required should be<br>assessed once the company is formally established.]</strong></p>
+<h2>7. Data Security</h2>
+<p>We take reasonable technical and organizational measures to protect the<br>limited information described in this policy. However, no method of<br>electronic transmission or storage is 100% secure, and we cannot<br>guarantee absolute security.</p>
+<h2>8. International Data Transfers</h2>
+<p>Because our third-party AI providers (Groq, Anthropic) may process data<br>on servers located outside your country of residence, your information<br>(specifically, your audio during analysis, or extracted text) may be<br>transferred to and processed in other countries, which may have<br>different data protection laws than your own.</p>
+<h2>9. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time, for example if we<br>add new features (such as analytics) or change how we process data. We<br>will update the "Last updated" date at the top of this policy when<br>changes are made. Continued use of the App after changes take effect<br>constitutes acceptance of the updated policy.</p>
+<h2>10. Contact Us</h2>
+<p>If you have questions, concerns, or requests regarding this Privacy<br>Policy or your personal information, please contact:</p>
+<p><strong>[DOLDURULACAK: Company name]</strong><br>Address: [DOLDURULACAK: Address]<br>Email: [DOLDURULACAK: Contact email]<br>Website: [DOLDURULACAK: Website]</p>
+<p>the StudyBot / İnek team</p>
+</div>
+</body>
+</html>

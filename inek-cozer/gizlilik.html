@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — İnek Çözer</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="page">
+<p class="back"><a href="../index.html">&larr; Tüm uygulamalar</a></p>
+<blockquote><p>Taslak, 10.09.2026. Son kontrol Oğulcan (avukat).</p></blockquote>
+<h1>Gizlilik Politikası: İnek Çözer</h1>
+<p><strong>Son güncelleme: [DOLDURULACAK: Tarih]</strong></p>
+<p>Bu Gizlilik Politikası, İnek Çözer ("Uygulama", "biz", "bize", "bizim")<br>uygulamasını kullanırken bilgilerinizin nasıl işlendiğini açıklar. Uygulama<br>[DOLDURULACAK: Şirket adı] ("İnek Çözer ekibi") tarafından geliştirilip<br>işletilmektedir.</p>
+<p>Uygulamayı kullanarak bu politikada anlatılan uygulamaları kabul etmiş<br>olursunuz. Kabul etmiyorsanız lütfen Uygulamayı kullanmayın.</p>
+<p>Veri akışı bu belgede, Uygulamanın gerçek sunucu koduna (<code>backend/sunucu.js</code>)<br>bakılarak doğrulanmıştır; aşağıda anlatılanlar varsayım değil, kodun fiilen<br>yaptığıdır.</p>
+<h2>1. Hangi Bilgileri Topluyoruz</h2>
+<h3>1.1 Soru fotoğrafı (geçici, saklanmaz)</h3>
+<p>Kamerayla veya galeriden bir soru fotoğrafı gönderdiğinizde, fotoğraf<br>sunucumuza gönderilir; sunucu bunu fotoğrafı metne çevirmek için <strong>Groq</strong><br>adlı üçüncü taraf yapay zeka servisine iletir (bkz. Bölüm 2). <strong>Fotoğrafınız<br>sunucumuzda diske kalıcı olarak yazılmaz; işlem (okuma) tamamlanınca<br>silinir.</strong></p>
+<h3>1.2 Yazarak sorulan soru</h3>
+<p>Soruyu fotoğraf yerine yazarak sorarsanız, aynı akış fotoğraf adımı<br>atlanarak devam eder; yazdığınız metin doğrudan Bölüm 1.3'teki çözüm<br>adımına girer.</p>
+<h3>1.3 Soru metninden çözüm üretimi</h3>
+<p>Fotoğraftan okunan ya da elle yazılan soru metni, önce <strong>soru bankasında</strong><br>(bkz. 1.4) daha önce çözülmüş aynı/benzer bir soru olup olmadığına bakılır.<br>Yoksa metin, cevap, adım adım çözüm, "neden böyle" açıklaması ve sık<br>yapılan hata üretmek üzere üçüncü taraf yapay zeka servisi <strong>Anthropic<br>(Claude)</strong>'a gönderilir (bkz. Bölüm 2). Bu metin de sunucumuzda kalıcı<br>olarak diske yazılmaz.</p>
+<h3>1.4 Soru bankası (anonim önbellek)</h3>
+<p>Sorunuzun metni ve üretilen çözüm, <strong>kişisel veri içermeyen</strong> anonim bir<br>"soru bankası" önbelleğinde saklanabilir. Bu, aynı soruyu daha sonra soran<br>başka bir kullanıcıya (veya size) hızlı ve ücretsiz cevap verebilmek<br>içindir. Soru bankasındaki kayıtlar sizinle, cihazınızla veya hesabınızla<br>ilişkilendirilmez.</p>
+<h3>1.5 Konu karnesinin (performans karnesi) saklandığı yer</h3>
+<p>Hangi konuda kaç kere soru sorduğunuzu gösteren konu karnesi, <strong>cihazınızda</strong><br>tutulur. Bu veri bizim sunucularımıza kalıcı olarak YÜKLENMEZ ve<br>sunucularımızda saklanmaz.</p>
+<h3>1.6 Günlük kullanım kotası ve IP adresi</h3>
+<p>Ücretsiz günlük soru hakkınızı ve kötüye kullanımı önlemeyi sağlamak için,<br>sunucumuz günlük istek sayısını <strong>IP adresinize</strong> göre sayar. Bu IP tabanlı<br>sayaç yalnızca kota kontrolü için kullanılır; kalıcı bir kişisel profil<br>oluşturmak için kullanılmaz ve IP adresleri uzun süreli arşivlenmez.</p>
+<h3>1.7 Satın alma / abonelik durumu</h3>
+<p>Biz (ve/veya App Store / Google Play ve abonelik/ödeme işleme sağlayıcımız),<br>Uygulamanın doğru özellikleri açabilmesi için abonelik durumunuzun (ör.<br>aktif bir aboneliğiniz olup olmadığı) kaydını tutarız. Tam kart<br>bilgilerinizi almayız veya saklamayız; bunlar doğrudan Apple veya Google<br>tarafından işlenir.</p>
+<h3>1.8 Analitik</h3>
+<p>Bu sürümde İnek Çözer herhangi bir analitik veya takip servisi<br><strong>kullanmamaktadır</strong>. İleride analitik veya çökme raporlama aracı<br>eklenirse, bu Gizlilik Politikası önceden güncellenir ve yukarıdaki "Son<br>güncelleme" tarihi değişir.</p>
+<h2>2. Üçüncü Taraf Yapay Zeka İşleyicileri</h2>
+<p>Sorunuzu okumak ve çözmek için verileriniz şu üçüncü taraf servislere<br>iletilir:</p>
+<ul>
+<li><strong>Groq</strong>: soru fotoğrafınızı okuyup metne çevirir.</li>
+<li><strong>Anthropic (Claude)</strong>: okunan/yazılan soru metnini cevap, adım adım</li>
+</ul>
+<p>  çözüm, "neden böyle" açıklaması ve sık yapılan hataya dönüştürür.</p>
+<p>Bu sağlayıcıların kendi altyapılarında veriyi geçici olarak ne kadar<br>süreyle tuttuğunu kontrol edemeyiz; ancak İnek Çözer kendi sunucusu<br>üzerinden fotoğrafınızı işlem öncesinde, sırasında veya sonrasında diske<br>yazmaz ya da arşivlemez.</p>
+<h2>3. Bilgileri Nasıl Kullanıyoruz</h2>
+<p>Yukarıda açıklanan sınırlı bilgileri yalnızca şu amaçlarla kullanırız:</p>
+<ul>
+<li>Soru fotoğrafınızdan/yazınızdan cevap, adım adım çözüm ve ilgili</li>
+</ul>
+<p>  açıklamaları üretmek.</p>
+<ul>
+<li>Aynı soruyu tekrar soran kullanıcılara soru bankası üzerinden hızlı ve</li>
+</ul>
+<p>  ücretsiz cevap sunmak (kişisel veri içermeden).</p>
+<ul>
+<li>Günlük kullanım kotanızı uygulamak ve kötüye kullanımı önlemek.</li>
+<li>Abonelik durumunuzu yönetmek ve ücretli özellikleri açmak.</li>
+<li>Uygulamayı işletmek, sürdürmek ve iyileştirmek.</li>
+</ul>
+<p>Kişisel bilgilerinizi satmayız.</p>
+<h2>4. Veri Saklama Süresi</h2>
+<ul>
+<li><strong>Soru fotoğrafı, yazarak sorulan soru metni:</strong> kalıcı olarak</li>
+</ul>
+<p>  saklanmaz; yalnızca ilgili isteğin işlenmesi süresince kullanılır.</p>
+<ul>
+<li><strong>Soru bankası kaydı (soru metni + çözüm, kişisel veri içermez):</strong></li>
+</ul>
+<p>  aynı soruya tekrar hızlı cevap verebilmek için süresiz saklanabilir;<br>  hiçbir kullanıcı kimliğiyle ilişkilendirilmez.</p>
+<ul>
+<li><strong>Konu karnesi:</strong> yalnızca sizin cihazınızda tutulur; sunucumuzda</li>
+</ul>
+<p>  tutulmaz.</p>
+<ul>
+<li><strong>Günlük kota sayacı (IP bazlı):</strong> yalnızca kısa süreli kota kontrolü</li>
+</ul>
+<p>  için tutulur, uzun süreli arşivlenmez.</p>
+<ul>
+<li><strong>Abonelik durumu:</strong> aboneliğinizi yönetmek ve yasal/muhasebe</li>
+</ul>
+<p>  yükümlülüklerine uymak için gereken süre boyunca tutulur.</p>
+<h2>5. Çocukların Gizliliği</h2>
+<p>İnek Çözer, 13 yaşın altındaki kişilerin kullanımı için tasarlanmamıştır.<br>13 yaşın altındaki çocuklardan bilerek bilgi toplamayız. 13 yaşından küçük<br>bir çocuğun Uygulamayı kullandığını ve bize bilgi verdiğini düşünüyorsanız,<br>konuyu ele alabilmemiz için lütfen [DOLDURULACAK: İletişim e-postası]<br>adresinden bize ulaşın.</p>
+<p>Not: Uygulama sınav hazırlığı (YKS, LGS, AYT, TYT, KPSS ve benzeri) amaçlı<br>kullanıldığı için kullanıcı kitlesinin büyük bölümü orta öğretim/üniversite<br>yaşındadır; yine de 13 yaş altı kullanım hedeflenmemektedir.</p>
+<h2>6. Haklarınız</h2>
+<h3>6.1 KVKK (Türkiye: 6698 sayılı Kişisel Verilerin Korunması Kanunu)</h3>
+<p>Türkiye'de ikamet ediyorsanız, KVKK kapsamında şu haklara sahipsiniz:</p>
+<ul>
+<li>Kişisel verinizin işlenip işlenmediğini öğrenme.</li>
+<li>İşlenmişse buna ilişkin bilgi talep etme.</li>
+<li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme.</li>
+<li>Yurt içinde/yurt dışında verilerin aktarıldığı üçüncü kişileri bilme.</li>
+<li>Eksik/yanlış işlenmişse düzeltilmesini isteme.</li>
+<li>Kanuni şartlar oluştuğunda verinin silinmesini/yok edilmesini isteme.</li>
+<li>Yapılan işlemlerin, verinin aktarıldığı üçüncü kişilere bildirilmesini</li>
+</ul>
+<p>  isteme.</p>
+<ul>
+<li>İşlenen verinin münhasıran otomatik sistemlerle analiz edilmesi</li>
+</ul>
+<p>  suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme.</p>
+<ul>
+<li>Kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın</li>
+</ul>
+<p>  giderilmesini talep etme.</p>
+<p>Bu haklarınızı kullanmak için [DOLDURULACAK: İletişim e-postası]<br>adresinden veri sorumlusu sıfatıyla bize başvurabilirsiniz.<br><strong>[DOLDURULACAK: Veri Sorumlusu unvanı/adresi: KVKK madde 11 başvurusu<br>için VERBİS kaydı gerekip gerekmediği şirket kurulduğunda ayrıca<br>değerlendirilmelidir.]</strong></p>
+<h3>6.2 GDPR ve Diğer Ülkeler</h3>
+<p>Avrupa Birliği/Avrupa Ekonomik Alanı veya benzer veri koruma kanunu olan<br>bir ülkede ikamet ediyorsanız, şu haklara sahip olabilirsiniz:</p>
+<ul>
+<li>Hakkınızda tuttuğumuz kişisel bilgileri öğrenme.</li>
+<li>Bu bilgilere erişim, düzeltme veya silinmesini talep etme.</li>
+<li>Belirli işlemlere itiraz etme veya bunları kısıtlama.</li>
+<li>Verilerinizin taşınabilir bir formatta kopyasını isteme.</li>
+<li>İşleme rızaya dayanıyorsa, rızanızı istediğiniz an geri çekme.</li>
+<li>Kişisel bilgilerin "satışına"/"paylaşımına" itiraz etme (kişisel bilgi</li>
+</ul>
+<p>  satmıyoruz).</p>
+<p>Bu haklardan herhangi birini kullanmak için [DOLDURULACAK: İletişim<br>e-postası] adresinden bize ulaşın. Talebinize yürürlükteki mevzuata uygun<br>şekilde yanıt vereceğiz.</p>
+<h2>7. Veri Güvenliği</h2>
+<p>Bu politikada açıklanan sınırlı bilgiyi korumak için makul teknik ve<br>idari önlemler alıyoruz. Ancak hiçbir elektronik iletim veya saklama<br>yöntemi %100 güvenli değildir; mutlak güvenliği garanti edemeyiz.</p>
+<h2>8. Uluslararası Veri Aktarımı</h2>
+<p>Üçüncü taraf yapay zeka sağlayıcılarımız (Groq, Anthropic) verileri<br>bulunduğunuz ülke dışındaki sunucularda işleyebileceğinden, bilgileriniz<br>(özellikle işleme sırasındaki soru fotoğrafınız veya soru metniniz) başka<br>ülkelere aktarılıp orada işlenebilir; bu ülkelerin veri koruma kanunları<br>sizin ülkenizden farklı olabilir.</p>
+<h2>9. Bu Politikadaki Değişiklikler</h2>
+<p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz (ör. yeni bir<br>özellik eklendiğinde veya veri işleme şeklimiz değiştiğinde). Değişiklik<br>yapıldığında yukarıdaki "Son güncelleme" tarihini güncelleriz.<br>Değişiklikler yürürlüğe girdikten sonra Uygulamayı kullanmaya devam etmek,<br>güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+<h2>10. Bize Ulaşın</h2>
+<p>Bu Gizlilik Politikası veya kişisel bilgileriniz hakkında sorularınız,<br>endişeleriniz veya talepleriniz için:</p>
+<p><strong>[DOLDURULACAK: Şirket adı]</strong><br>Adres: [DOLDURULACAK: Adres]<br>E-posta: [DOLDURULACAK: İletişim e-postası]<br>Web sitesi: [DOLDURULACAK: Web sitesi]</p>
+<p>İnek Çözer ekibi</p>
+<hr>
+<hr>
+<h1>Privacy Policy: İnek Çözer (English)</h1>
+<p><strong>Last updated: [DOLDURULACAK: Date]</strong></p>
+<p>This Privacy Policy explains how information is handled when you use the<br>İnek Çözer mobile application ("the App," "we," "us," or "our"). The App<br>is developed and operated by [DOLDURULACAK: Company name] ("the İnek<br>Çözer team").</p>
+<p>By using the App, you agree to the practices described in this policy. If<br>you do not agree, please do not use the App.</p>
+<p>The data flow described below was verified against the App's actual<br>server code (<code>backend/sunucu.js</code>): this is not a guess, it reflects what<br>the server does.</p>
+<h2>1. Information We Collect</h2>
+<h3>1.1 Question photo (temporary, not stored)</h3>
+<p>When you send a question photo from the camera or gallery, the photo is<br>sent to our server; our server forwards it to <strong>Groq</strong>, a third-party AI<br>provider, to convert it to text (see Section 2). <strong>Your photo is not<br>permanently written to disk on our server; it is deleted once the<br>reading step is done.</strong></p>
+<h3>1.2 Typed-in question</h3>
+<p>If you type a question instead of photographing it, the same flow<br>continues from Section 1.3, skipping the photo step; your typed text<br>goes directly into the solution step.</p>
+<h3>1.3 Generating a solution from the question text</h3>
+<p>The question text, whether read from a photo or typed by hand, is first<br>checked against the <strong>question bank</strong> (see 1.4) for an existing<br>matching/similar solution. If none exists, the text is sent to<br><strong>Anthropic (Claude)</strong>, a third-party AI provider, to generate an answer,<br>a step-by-step solution, a "why it works" note, and the common mistake on<br>that question (see Section 2). This text is also not permanently written<br>to disk on our server.</p>
+<h3>1.4 Question bank (anonymous cache)</h3>
+<p>Your question's text and the generated solution may be stored in an<br>anonymous "question bank" cache that contains <strong>no personal data</strong>. This<br>lets us give a fast, free answer to another user (or to you) who asks the<br>same question later. Records in the question bank are never linked to<br>you, your device, or your account.</p>
+<h3>1.5 Where your weak-topic report lives</h3>
+<p>The weak-topic report, showing how often you got stuck on each topic, is<br>stored <strong>on your device</strong>. This data is not permanently uploaded to or<br>stored on our servers.</p>
+<h3>1.6 Daily usage quota and IP address</h3>
+<p>To apply your free daily question limit and prevent abuse, our server<br>counts daily requests by <strong>IP address</strong>. This IP-based counter is used<br>only for quota enforcement; it is not used to build a lasting personal<br>profile, and IP addresses are not archived long-term.</p>
+<h3>1.7 Purchase / subscription status</h3>
+<p>We (and/or the App Store / Google Play, and our subscription/payment<br>processing provider) keep a record of your subscription status (for<br>example, whether you have an active subscription) so the App can unlock<br>the correct features. We do not receive or store your full payment card<br>details; these are handled directly by Apple or Google.</p>
+<h3>1.8 Analytics</h3>
+<p>As of this version, İnek Çözer does <strong>not</strong> use any analytics or<br>tracking service. If we add analytics or crash-reporting tools in the<br>future, this Privacy Policy will be updated in advance, and the "Last<br>updated" date above will change accordingly.</p>
+<h2>2. Third-Party AI Processors</h2>
+<p>To read and solve your question, your data is sent to these third-party<br>services:</p>
+<ul>
+<li><strong>Groq</strong>: reads your question photo and converts it to text.</li>
+<li><strong>Anthropic (Claude)</strong>: turns the read/typed question text into an</li>
+</ul>
+<p>  answer, a step-by-step solution, a "why it works" note, and the<br>  common mistake on that question.</p>
+<p>We do not control how long these providers' own infrastructure may<br>transiently hold data during processing, but İnek Çözer itself does not<br>write your photo to disk or archive it, before, during, or after that<br>exchange, on its own server.</p>
+<h2>3. How We Use Information</h2>
+<p>We use the limited information described above only to:</p>
+<ul>
+<li>Generate an answer, step-by-step solution, and related explanations</li>
+</ul>
+<p>  from your question photo/text.</p>
+<ul>
+<li>Give other users who ask the same question a fast, free answer through</li>
+</ul>
+<p>  the question bank, without personal data.</p>
+<ul>
+<li>Enforce your daily usage quota and prevent abuse.</li>
+<li>Manage your subscription and unlock paid features.</li>
+<li>Operate, maintain, and improve the App.</li>
+</ul>
+<p>We do not sell your personal information.</p>
+<h2>4. Data Retention</h2>
+<ul>
+<li><strong>Question photo, typed-in question text:</strong> not permanently stored;</li>
+</ul>
+<p>  used only for the duration of processing the relevant request.</p>
+<ul>
+<li><strong>Question bank record (question text + solution, no personal data):</strong></li>
+</ul>
+<p>  may be kept indefinitely to answer the same question quickly next<br>  time; never linked to any user identity.</p>
+<ul>
+<li><strong>Weak-topic report:</strong> kept only on your own device; not retained on</li>
+</ul>
+<p>  our servers.</p>
+<ul>
+<li><strong>Daily quota counter (IP-based):</strong> kept only for short-term quota</li>
+</ul>
+<p>  enforcement, not archived long-term.</p>
+<ul>
+<li><strong>Subscription status:</strong> retained for as long as needed to manage your</li>
+</ul>
+<p>  subscription and comply with legal/accounting obligations.</p>
+<h2>5. Children's Privacy</h2>
+<p>İnek Çözer is not intended for use by anyone under the age of 13. We do<br>not knowingly collect information from children under 13. If you believe<br>a child under 13 has used the App and provided us with information,<br>please contact us at [DOLDURULACAK: Contact email] so we can address it.</p>
+<p>Note: because the App is used for exam preparation (YKS, LGS, AYT, TYT,<br>KPSS and similar), most users are of secondary school/university age;<br>the App still does not target users under 13.</p>
+<h2>6. Your Rights</h2>
+<h3>6.1 GDPR (EU/EEA and similar jurisdictions)</h3>
+<p>If you live in the European Union/European Economic Area or a<br>jurisdiction with similar data protection law, you may have the right<br>to:</p>
+<ul>
+<li>Know what personal information we hold about you.</li>
+<li>Request access to, correction of, or deletion of your personal</li>
+</ul>
+<p>  information.</p>
+<ul>
+<li>Object to or restrict certain processing.</li>
+<li>Request a copy of your data in a portable format.</li>
+<li>Withdraw consent at any time, where processing is based on consent.</li>
+<li>Object to the "sale" or "sharing" of personal information (we do not</li>
+</ul>
+<p>  sell personal information).</p>
+<p>To exercise any of these rights, contact us at [DOLDURULACAK: Contact<br>email]. We will respond in accordance with applicable law.</p>
+<h3>6.2 KVKK (Turkey: Law No. 6698 on the Protection of Personal Data)</h3>
+<p>If you reside in Turkey, under KVKK you have the right to, among others:<br>learn whether your personal data is processed; request information<br>about it; learn its purpose and whether it is used accordingly; know<br>the third parties it is transferred to; request correction of<br>incomplete/incorrect data; request deletion/destruction where legal<br>conditions apply; object to a result that is to your detriment arising<br>solely from automated analysis; and claim compensation for damages<br>arising from unlawful processing. You may submit these requests to<br>[DOLDURULACAK: Contact email]. <strong>[DOLDURULACAK: data controller<br>title/address: whether a VERBİS registration is required should be<br>assessed once the company is formally established.]</strong></p>
+<h2>7. Data Security</h2>
+<p>We take reasonable technical and organizational measures to protect the<br>limited information described in this policy. However, no method of<br>electronic transmission or storage is 100% secure, and we cannot<br>guarantee absolute security.</p>
+<h2>8. International Data Transfers</h2>
+<p>Because our third-party AI providers (Groq, Anthropic) may process data<br>on servers located outside your country of residence, your information<br>(specifically, your question photo or question text during processing)<br>may be transferred to and processed in other countries, which may have<br>different data protection laws than your own.</p>
+<h2>9. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time, for example if we<br>add new features (such as analytics) or change how we process data. We<br>will update the "Last updated" date at the top of this policy when<br>changes are made. Continued use of the App after changes take effect<br>constitutes acceptance of the updated policy.</p>
+<h2>10. Contact Us</h2>
+<p>If you have questions, concerns, or requests regarding this Privacy<br>Policy or your personal information, please contact:</p>
+<p><strong>[DOLDURULACAK: Company name]</strong><br>Address: [DOLDURULACAK: Address]<br>Email: [DOLDURULACAK: Contact email]<br>Website: [DOLDURULACAK: Website]</p>
+<p>the İnek Çözer team</p>
+</div>
+</body>
+</html>
