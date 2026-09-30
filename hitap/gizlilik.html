@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Hitap</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="page">
+<p class="back"><a href="../index.html">&larr; Tüm uygulamalar</a></p>
+<h1>Gizlilik Politikası: Hitap</h1>
+<p><strong>Son güncelleme: 30.09.2026</strong></p>
+<p>Bu Gizlilik Politikası, Hitap ("Uygulama", "biz", "bize", "bizim") uygulamasını kullanırken bilgilerinizin nasıl işlendiğini açıklar. Uygulama Biggest Holding ("Hitap ekibi") tarafından geliştirilip işletilmektedir.</p>
+<p>Uygulamayı kullanarak bu politikada anlatılan uygulamaları kabul etmiş olursunuz. Kabul etmiyorsanız lütfen Uygulamayı kullanmayın.</p>
+<h2>1. Hangi Bilgileri Topluyoruz</h2>
+<h3>1.1 Soru metni</h3>
+<p>Yazdığınız soruyu ya da derdinizi gönderdiğinizde, bu metin cevap üretmek üzere sunucumuza, oradan da üçüncü taraf yapay zeka servisi <strong>Groq (gpt-oss-120b modeli; yedek olarak Anthropic Claude)</strong>'a iletilir (bkz. Bölüm 2). Hitap'ta kamera/fotoğraf ile soru gönderme yoktur; yalnızca yazılı metin kullanılır.</p>
+<h3>1.2 Sohbet geçmişi (yalnız o an açık sohbet için)</h3>
+<p>Bir sohbette takip sorusu sorduğunuzda, aynı sohbetteki <strong>en fazla son 6 mesaj</strong> (sizin yazdıklarınız + Hitap'ın önceki cevapları), yeni sorunuzla birlikte tekrar yapay zeka servisine gönderilir; bu, cevabın önceki konuşmayla tutarlı olmasını sağlar. Daha eski mesajlar gönderilmez.</p>
+<h3>1.3 Cihaz kimliği (rastgele üretilir)</h3>
+<p>Uygulama, ilk açılışta cihazınızda <strong>rastgele bir kimlik</strong> üretir. Bu kimlik adınız, telefon numaranız ya da başka bir kişisel bilgiyle bağlantılı değildir; yalnızca günlük soru hakkınızı (kotanızı) saymak için sunucuya gönderilir.</p>
+<h3>1.4 Soru bankası (anonim önbellek)</h3>
+<p>Sorunuzun metni ve üretilen cevap, <strong>kişisel veri içermeyen</strong> anonim bir "soru bankası" önbelleğinde saklanabilir. Bu önbelleğin anahtarı, soru metninin geri döndürülemeyecek şekilde özetlenmesiyle (hash) elde edilir ve <strong>cihaz kimliğinizden bağımsızdır</strong>; yani banka kaydı sizi, cihazınızı ya da kimliğinizi belirlemek için kullanılamaz. Amaç, aynı soruyu soran başka bir kullanıcıya (ya da size) hızlı ve ücretsiz cevap verebilmektir. Yalnızca ilk sorularda önbelleğe bakılır; bir sohbette takip sorusu sorduğunuzda önbellek kullanılmaz (çünkü cevap önceki mesajlara bağlıdır).</p>
+<h3>1.5 Sohbetleriniz, kayıtlı ayetleriniz ve tercihleriniz</h3>
+<p>Sohbet geçmişiniz, kaydettiğiniz ayetler, tema/dil tercihiniz ve bildirim ayarlarınız <strong>yalnızca cihazınızda</strong> tutulur (cihaz depolaması). Bu veriler bizim sunucularımıza kalıcı olarak yüklenmez ve sunucularımızda saklanmaz; Uygulamayı silerseniz ya da bu verileri kendiniz silerseniz cihazınızdan kaybolur.</p>
+<h3>1.6 Günlük kullanım kotası ve IP adresi</h3>
+<p>Kötüye kullanımı önlemek için sunucumuz, <strong>IP adresinize</strong> göre dakika başına istek sayısını sınırlar. Bu sayaç yalnızca bellekte tutulur, diske yazılmaz ve düzenli aralıklarla kendiliğinden temizlenir; kalıcı bir kişisel profil oluşturmak için kullanılmaz ve IP adresleri arşivlenmez.</p>
+<h3>1.7 Satın alma / abonelik durumu</h3>
+<p>Biz (ve/veya App Store / Google Play ve abonelik/ödeme işleme sağlayıcımız), Uygulamanın doğru özellikleri açabilmesi için abonelik durumunuzun (ör. aktif bir aboneliğiniz olup olmadığı) kaydını tutarız. Tam kart bilgilerinizi almayız veya saklamayız; bunlar doğrudan Apple veya Google tarafından işlenir.</p>
+<h3>1.8 Bildirimler ("günün ayeti")</h3>
+<p>İsterseniz açabileceğiniz "günün ayeti" bildirimi tamamen <strong>cihazınızda zamanlanır</strong>; hangi ayetin ne zaman gösterileceği bilgisi sunucumuza gönderilmez, sunucumuz bu bildirimden habersizdir. Bildirimi istediğiniz zaman kapatabilirsiniz.</p>
+<h3>1.9 Analitik</h3>
+<p>Bu sürümde Hitap herhangi bir analitik veya reklam takip servisi <strong>kullanmamaktadır</strong>. İleride analitik veya çökme raporlama aracı eklenirse, bu Gizlilik Politikası önceden güncellenir ve yukarıdaki "Son güncelleme" tarihi değişir.</p>
+<h2>2. Üçüncü Taraf Yapay Zeka İşleyicisi</h2>
+<p>Sorunuzu cevaplamak için soru metniniz ve (varsa) sohbetteki son 6 mesaj, tek bir üçüncü taraf servise iletilir:</p>
+<ul>
+<li><strong>Groq (gpt-oss-120b modeli; yedek olarak Anthropic Claude)</strong>: yazdığınız soruyu okuyup 2-4 ayet numarası, her ayet için "neden ilgili" cümlesi, sade bir açıklama ve takip soruları üretir. Bu servis ayetlerin METNİNİ hiçbir zaman yazmaz; yalnızca sure:ayet numarası döndürür, metnin kendisi Uygulamanın kendi veri dosyasından okunur ve numara geçerli değilse o ayet hiç gösterilmez.</li>
+</ul>
+<p>Bu sağlayıcının kendi altyapısında veriyi geçici olarak ne kadar süreyle tuttuğunu kontrol edemeyiz; bu, Groq'un ve Anthropic'in kendi API veri politikalarına tabidir. Hitap kendi sunucusu üzerinden soru metninizi kalıcı bir kullanıcı kaydı olarak diske yazmaz veya arşivlemez (yalnızca 1.4'te anlatılan anonim, kimliksiz önbellek istisnadır).</p>
+<h2>3. Bilgileri Nasıl Kullanıyoruz</h2>
+<p>Yukarıda açıklanan sınırlı bilgileri yalnızca şu amaçlarla kullanırız:</p>
+<ul>
+<li>Soru metninizden ayet, "neden ilgili" açıklaması ve takip sorularını üretmek.</li>
+<li>Aynı soruyu soran kullanıcılara soru bankası üzerinden hızlı ve ücretsiz cevap sunmak (kişisel veri içermeden).</li>
+<li>Günlük kullanım kotanızı uygulamak ve kötüye kullanımı önlemek.</li>
+<li>Abonelik durumunuzu yönetmek ve premium özellikleri açmak.</li>
+<li>Uygulamayı işletmek, sürdürmek ve iyileştirmek.</li>
+</ul>
+<p>Kişisel bilgilerinizi satmayız.</p>
+<h2>4. Veri Saklama Süresi</h2>
+<ul>
+<li><strong>Soru metni ve sohbet geçmişi (API isteği sırasında):</strong> kalıcı olarak saklanmaz; yalnızca ilgili isteğin işlenmesi süresince kullanılır.</li>
+<li><strong>Soru bankası kaydı (kimliksiz soru özeti + cevap):</strong> aynı soruya tekrar hızlı cevap verebilmek için süresiz saklanabilir; hiçbir kullanıcı kimliğiyle veya cihaz kimliğiyle ilişkilendirilmez.</li>
+<li><strong>Sohbetler, kayıtlı ayetler, tercihler:</strong> yalnızca cihazınızda tutulur; sunucumuzda tutulmaz.</li>
+<li><strong>Günlük kota sayacı (cihaz kimliği bazlı) ve IP hız sınırı:</strong> kısa süreli kota/kötüye kullanım kontrolü için tutulur; IP verisi kalıcı arşivlenmez.</li>
+<li><strong>Abonelik durumu:</strong> aboneliğinizi yönetmek ve yasal/muhasebe yükümlülüklerine uymak için gereken süre boyunca tutulur.</li>
+</ul>
+<h2>5. Çocukların Gizliliği</h2>
+<p>Hitap, mağaza içerik derecelendirmesi olarak <strong>4+ / Herkese Açık</strong> işaretlenir (şiddet, yetişkin içerik veya kullanıcı üretimi genel paylaşım içermediği için); ancak Uygulama <strong>13 yaşın altındaki kişilerin kullanımı için tasarlanmamıştır</strong>. 13 yaşın altındaki çocuklardan bilerek bilgi toplamayız. 13 yaşından küçük bir çocuğun Uygulamayı kullandığını ve bize bilgi verdiğini düşünüyorsanız, konuyu ele alabilmemiz için lütfen adacanproduction@gmail.com adresinden bize ulaşın.</p>
+<h2>6. Haklarınız</h2>
+<h3>6.1 KVKK (Türkiye: 6698 sayılı Kişisel Verilerin Korunması Kanunu)</h3>
+<p>Türkiye'de ikamet ediyorsanız, KVKK kapsamında şu haklara sahipsiniz:</p>
+<ul>
+<li>Kişisel verinizin işlenip işlenmediğini öğrenme.</li>
+<li>İşlenmişse buna ilişkin bilgi talep etme.</li>
+<li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme.</li>
+<li>Yurt içinde/yurt dışında verilerin aktarıldığı üçüncü kişileri bilme.</li>
+<li>Eksik/yanlış işlenmişse düzeltilmesini isteme.</li>
+<li>Kanuni şartlar oluştuğunda verinin silinmesini/yok edilmesini isteme.</li>
+<li>Yapılan işlemlerin, verinin aktarıldığı üçüncü kişilere bildirilmesini isteme.</li>
+<li>İşlenen verinin münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme.</li>
+<li>Kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme.</li>
+</ul>
+<p>Bu haklarınızı kullanmak (ör. cihaz kimliğinizle ilişkili günlük kota sayacının veya soru bankasındaki kimliksiz kaydın silinmesini istemek) için adacanproduction@gmail.com adresinden veri sorumlusu sıfatıyla bize başvurabilirsiniz.</p>
+<h3>6.2 GDPR ve Diğer Ülkeler</h3>
+<p>Avrupa Birliği/Avrupa Ekonomik Alanı veya benzer veri koruma kanunu olan bir ülkede ikamet ediyorsanız, şu haklara sahip olabilirsiniz:</p>
+<ul>
+<li>Hakkınızda tuttuğumuz kişisel bilgileri öğrenme.</li>
+<li>Bu bilgilere erişim, düzeltme veya silinmesini talep etme.</li>
+<li>Belirli işlemlere itiraz etme veya bunları kısıtlama.</li>
+<li>Verilerinizin taşınabilir bir formatta kopyasını isteme.</li>
+<li>İşleme rızaya dayanıyorsa, rızanızı istediğiniz an geri çekme.</li>
+<li>Kişisel bilgilerin "satışına"/"paylaşımına" itiraz etme (kişisel bilgi satmıyoruz).</li>
+</ul>
+<p>Bu haklardan herhangi birini kullanmak için adacanproduction@gmail.com adresinden bize ulaşın. Talebinize yürürlükteki mevzuata uygun şekilde yanıt vereceğiz.</p>
+<h2>7. Veri Güvenliği</h2>
+<p>Bu politikada açıklanan sınırlı bilgiyi korumak için makul teknik ve idari önlemler alıyoruz (ör. soru bankası anahtarının geri döndürülemez şekilde özetlenmesi, cihaz kimliğinin rastgele üretilmesi). Ancak hiçbir elektronik iletim veya saklama yöntemi %100 güvenli değildir; mutlak güvenliği garanti edemeyiz.</p>
+<h2>8. Uluslararası Veri Aktarımı</h2>
+<p>Üçüncü taraf yapay zeka sağlayıcımız (Groq, Anthropic) verileri bulunduğunuz ülke dışındaki sunucularda işleyebileceğinden, bilgileriniz (özellikle işleme sırasındaki soru metniniz) başka ülkelere aktarılıp orada işlenebilir; bu ülkelerin veri koruma kanunları sizin ülkenizden farklı olabilir.</p>
+<h2>9. Bu Politikadaki Değişiklikler</h2>
+<p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz (ör. yeni bir özellik eklendiğinde veya veri işleme şeklimiz değiştiğinde). Değişiklik yapıldığında yukarıdaki "Son güncelleme" tarihini güncelleriz. Değişiklikler yürürlüğe girdikten sonra Uygulamayı kullanmaya devam etmek, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+<h2>10. Bize Ulaşın</h2>
+<p>Bu Gizlilik Politikası veya kişisel bilgileriniz hakkında sorularınız, endişeleriniz, talepleriniz ya da veri silme talebiniz için:</p>
+<p><strong>Biggest Holding</strong></p>
+<p>E-posta: adacanproduction@gmail.com</p>
+<p>Web sitesi: https://ogulcanboss.github.io/biggestholding-yasal/</p>
+<p>Hitap ekibi</p>
+<hr>
+<hr>
+<h1>Privacy Policy: Hitap (English)</h1>
+<p><strong>Last updated: September 30, 2026</strong></p>
+<p>This Privacy Policy explains how information is handled when you use the Hitap mobile application ("the App," "we," "us," or "our"). The App is developed and operated by Biggest Holding ("the Hitap team").</p>
+<p>By using the App, you agree to the practices described in this policy. If you do not agree, please do not use the App.</p>
+<h2>1. Information We Collect</h2>
+<h3>1.1 Question text</h3>
+<p>When you submit a question or something on your mind, that text is sent to our server, and from there to a third-party AI provider, <strong>Groq (gpt-oss-120b model; Anthropic Claude as fallback)</strong>, to generate a response (see Section 2). Hitap has no camera/photo question input; only typed text is used.</p>
+<h3>1.2 Conversation history (for the current chat only)</h3>
+<p>When you ask a follow-up question within a chat, the <strong>last 6 messages at most</strong> from that same chat (your messages and Hitap's earlier replies) are sent again, together with your new question, so the answer stays consistent with the earlier conversation. Older messages are not sent.</p>
+<h3>1.3 Device identifier (randomly generated)</h3>
+<p>On first launch, the App generates a <strong>random identifier</strong> on your device. This identifier is not linked to your name, phone number, or any other personal information; it is sent to the server only to count your daily question allowance (quota).</p>
+<h3>1.4 Question bank (anonymous cache)</h3>
+<p>Your question's text and the generated answer may be stored in an anonymous "question bank" cache that contains <strong>no personal data</strong>. The cache key is derived by hashing the question text in a way that cannot be reversed, and is <strong>independent of your device identifier</strong>; the question-bank record can never be used to identify you, your device, or your account. This lets us give a fast, free answer to another user (or to you) who asks the same question later. The cache is only checked for a first question; when you ask a follow-up in an ongoing chat, the cache is not used (because the answer depends on the earlier messages).</p>
+<h3>1.5 Your conversations, saved verses, and preferences</h3>
+<p>Your chat history, saved verses, theme/language preference, and notification settings are stored <strong>only on your device</strong> (device storage). This data is not permanently uploaded to or stored on our servers; if you delete the App or delete this data yourself, it is gone from your device.</p>
+<h3>1.6 Daily usage quota and IP address</h3>
+<p>To prevent abuse, our server limits the number of requests per minute by <strong>IP address</strong>. This counter is kept in memory only, is never written to disk, and is cleared automatically on a regular schedule; it is not used to build a lasting personal profile, and IP addresses are not archived.</p>
+<h3>1.7 Purchase / subscription status</h3>
+<p>We (and/or the App Store / Google Play, and our subscription/payment processing provider) keep a record of your subscription status (for example, whether you have an active subscription) so the App can unlock the correct features. We do not receive or store your full payment card details; these are handled directly by Apple or Google.</p>
+<h3>1.8 Notifications ("verse of the day")</h3>
+<p>The optional "verse of the day" notification, if you turn it on, is scheduled entirely <strong>on your device</strong>; which verse will be shown and when is never sent to our server, and our server has no knowledge of it. You can turn this notification off at any time.</p>
+<h3>1.9 Analytics</h3>
+<p>As of this version, Hitap does <strong>not</strong> use any analytics or advertising tracking service. If we add analytics or crash-reporting tools in the future, this Privacy Policy will be updated in advance, and the "Last updated" date above will change accordingly.</p>
+<h2>2. Third-Party AI Processor</h2>
+<p>To answer your question, your question text and (if applicable) the last 6 messages of your chat are sent to one third-party service:</p>
+<ul>
+<li><strong>Groq (gpt-oss-120b model; Anthropic Claude as fallback)</strong>: reads your question and generates 2 to 4 verse numbers, a "why it fits" sentence for each, a plain explanation, and follow-up questions. This service never writes verse TEXT; it only returns a surah:verse number, and the text itself is read from the App's own data file; if a number is not valid, that verse is never shown at all.</li>
+</ul>
+<p>We do not control how long this provider's own infrastructure may transiently hold data, which is governed by Groq's and Anthropic's own API data policies. Hitap itself does not write your question text to disk as a permanent user record or archive it on its own server (the only exception is the anonymous, identity-free cache described in Section 1.4).</p>
+<h2>3. How We Use Information</h2>
+<p>We use the limited information described above only to:</p>
+<ul>
+<li>Generate verses, "why it fits" explanations, and follow-up questions from your question text.</li>
+<li>Give other users who ask the same question a fast, free answer through the question bank, without personal data.</li>
+<li>Enforce your daily usage quota and prevent abuse.</li>
+<li>Manage your subscription and unlock premium features.</li>
+<li>Operate, maintain, and improve the App.</li>
+</ul>
+<p>We do not sell your personal information.</p>
+<h2>4. Data Retention</h2>
+<ul>
+<li><strong>Question text and chat history (during the API request):</strong> not permanently stored; used only for the duration of processing the relevant request.</li>
+<li><strong>Question bank record (identity-free question digest + answer):</strong> may be kept indefinitely to answer the same question quickly next time; never linked to any user or device identity.</li>
+<li><strong>Conversations, saved verses, preferences:</strong> kept only on your own device; not retained on our servers.</li>
+<li><strong>Daily quota counter (device-ID based) and IP rate limit:</strong> kept only for short-term quota/abuse control; IP data is not archived long-term.</li>
+<li><strong>Subscription status:</strong> retained for as long as needed to manage your subscription and comply with legal/accounting obligations.</li>
+</ul>
+<h2>5. Children's Privacy</h2>
+<p>Hitap carries a store content rating of <strong>4+ / Everyone</strong> (because it contains no violence, adult content, or user-generated public sharing); however, the App <strong>is not intended for use by anyone under the age of 13</strong>. We do not knowingly collect information from children under 13. If you believe a child under 13 has used the App and provided us with information, please contact us at adacanproduction@gmail.com so we can address it.</p>
+<h2>6. Your Rights</h2>
+<h3>6.1 GDPR (EU/EEA and similar jurisdictions)</h3>
+<p>If you live in the European Union/European Economic Area or a jurisdiction with similar data protection law, you may have the right to:</p>
+<ul>
+<li>Know what personal information we hold about you.</li>
+<li>Request access to, correction of, or deletion of your personal information.</li>
+<li>Object to or restrict certain processing.</li>
+<li>Request a copy of your data in a portable format.</li>
+<li>Withdraw consent at any time, where processing is based on consent.</li>
+<li>Object to the "sale" or "sharing" of personal information (we do not sell personal information).</li>
+</ul>
+<p>To exercise any of these rights, contact us at adacanproduction@gmail.com. We will respond in accordance with applicable law.</p>
+<h3>6.2 KVKK (Turkey: Law No. 6698 on the Protection of Personal Data)</h3>
+<p>If you reside in Turkey, under KVKK you have the right to, among others: learn whether your personal data is processed; request information about it; learn its purpose and whether it is used accordingly; know the third parties it is transferred to; request correction of incomplete/incorrect data; request deletion/destruction where legal conditions apply (e.g., the device-ID-linked quota counter or the identity-free question-bank record); object to a result that is to your detriment arising solely from automated analysis; and claim compensation for damages arising from unlawful processing. You may submit these requests to adacanproduction@gmail.com.</p>
+<h2>7. Data Security</h2>
+<p>We take reasonable technical and organizational measures to protect the limited information described in this policy (for example, irreversibly hashing the question-bank cache key and generating the device identifier randomly). However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+<h2>8. International Data Transfers</h2>
+<p>Because our third-party AI provider (Groq, Anthropic) may process data on servers located outside your country of residence, your information (specifically, your question text during processing) may be transferred to and processed in other countries, which may have different data protection laws than your own.</p>
+<h2>9. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time, for example if we add new features (such as analytics) or change how we process data. We will update the "Last updated" date at the top of this policy when changes are made. Continued use of the App after changes take effect constitutes acceptance of the updated policy.</p>
+<h2>10. Contact Us</h2>
+<p>If you have questions, concerns, requests, or a data deletion request regarding this Privacy Policy or your personal information, please contact:</p>
+<p><strong>Biggest Holding</strong></p>
+<p>Email: adacanproduction@gmail.com</p>
+<p>Website: https://ogulcanboss.github.io/biggestholding-yasal/</p>
+<p>The Hitap team</p>
+</div>
+</body>
+</html>
